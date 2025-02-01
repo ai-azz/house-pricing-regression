@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+Pipfile
+Pipfile.lock
+.env
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files
+*.csv
+#*.json
+*.xlsx
+*.hdf5
+*.parquet
+
+# Model and results
+*.h5
+*.pkl
+*.joblib
+*.sav
+*.model
+
+# Logs
+logs/
+*.log
+
+# Cache and temporary files
+.cache/
+*.tmp
+*.bak
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+.DS_Store
+
+# Flask and web deployment
+instance/
