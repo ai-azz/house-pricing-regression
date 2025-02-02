@@ -13,7 +13,7 @@ Pipfile.lock
 .ipynb_checkpoints/
 
 # Data files
-*.csv
+#*.csv
 #*.json
 *.xlsx
 *.hdf5

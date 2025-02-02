@@ -12,7 +12,7 @@ The dataset consists of two main files:
 Make sure you have Python 3.x installed and install the required dependencies:
 
 ```bash
-pip install pandas numpy seaborn matplotlib scikit-learn joblib pickle flask
+pip install pandas numpy seaborn matplotlib scikit-learn joblib pickle flask streamlit
 ```
 
 ## Data Preprocessing
@@ -41,6 +41,15 @@ pip install pandas numpy seaborn matplotlib scikit-learn joblib pickle flask
 ### 2. Feature Correlation
 - Visualize correlations using heatmaps (`sns.heatmap()`).
 - Identify features highly correlated with `SalePrice`.
+
+### 3. Interactive EDA Dashboard
+A Streamlit dashboard has been implemented to visualize key insights from the dataset interactively. To run the dashboard, execute the following command:
+
+```bash
+streamlit run dashboard.py
+```
+
+The dashboard provides various plots and statistics to explore the dataset more effectively.
 
 ## Model Training
 The models used:
@@ -99,3 +108,5 @@ Ensure that the `data.json` file contains input data in the appropriate JSON for
 
 ## Conclusion
 This project implements regression models to predict house prices with various preprocessing techniques, data exploration, and model evaluation. The developed model can be used in web applications or APIs to provide automatic house price predictions.
+
+Additionally, an interactive Streamlit dashboard has been integrated to facilitate visual exploration of the dataset, making it easier to analyze trends and correlations.
