@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
@@ -70,7 +71,9 @@ translations = {
 
 @st.cache_data
 def load_data():
-    return pd.read_csv('cleaned_data.csv')
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(current_dir, 'cleaned_data.csv')
+    return pd.read_csv(csv_path)
 
 df = load_data()
 
