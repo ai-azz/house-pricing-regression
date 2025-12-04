@@ -51,6 +51,8 @@ streamlit run dashboard.py
 
 The dashboard provides various plots and statistics to explore the dataset more effectively.
 
+[Visit the live dashboard demo](https://house-pricing-regression.streamlit.app/)
+
 ## Model Training
 The models used:
 - **Least Angle Regression (LARS)**
